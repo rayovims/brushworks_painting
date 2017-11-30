@@ -22,6 +22,22 @@
     font-family: "Times New Roman", Times, serif;
 }
 
+#contact {
+    font-size: 24px;
+    color: white;
+    margin-left: 80px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.contact {
+    background-image: url("../Images/services.jpg");
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #aboutUs {
     margin-left: 50px;
     margin-top: 160px;
@@ -91,3 +107,36 @@ h1 {
         background-attachment: scroll;
     }
 }
+
+/*Here is the style for the contact form */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #7c7c7c;
+    padding: 20px;
+}
+
+/*Contact Form Style above*/
