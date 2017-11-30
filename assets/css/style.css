@@ -156,6 +156,10 @@ input[type=submit]:hover {
         height: 160px;
     }
     #aboutUs {
+        margin-top: 0;
         margin-left: 10px;
+    }
+    #main {
+        padding-top: 20px;
     }
 }
