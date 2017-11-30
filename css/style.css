@@ -1,8 +1,10 @@
+body {
+    position: relative;
+}
 .transition1 {
     background-image: url("../Images/roller1.png");
     background-size: cover;
     height: 150px;
-    font-size: 50px;
 }
 
 .examples {
@@ -18,7 +20,6 @@
 #services {
     font-size: 24px;
     color: white;
-    margin-left: 80px;
     font-family: "Times New Roman", Times, serif;
 }
 
