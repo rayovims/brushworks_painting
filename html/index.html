@@ -10,23 +10,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="350">
     <div id="header">
         <div class="row">
             <div class="col-lg-6">
                 <h2 class="text-center" id="logo">BrushWorks Painting</h2>
             </div>
-            <div class="col-sm-2 text-center">
-                <p>Services</p>
-            </div>
-            <div class="col-sm-2 text-center">
-                <p>Examples</p>
-            </div>
-            <div class="col-sm-2 text-center">
-                <p>Contact Us</p>
-            </div>
+            <div class="col-sm-2"></div>
+            <nav id="navbar">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li><a href="#main"><h3>About Us</h3></a></li>
+                    <li><a href="#services"><h3>Services</h3></a></li>
+                    <li><a href="#examples"><h3>Examples</h3></a></li>
+                    <li><a href="#contact"><h3>Contact</h3></a></li>
+                </ul>
+            </nav>
         </div>
     </div>
     <div id="main">
@@ -39,7 +40,7 @@
             </div>
         </div>
     </div>
-    <div class="transition1">
+    <div id="services" class="transition1" style="height:100px;font-size:50px;">
     </div>
     <div class="services">
         <div class="row">
@@ -51,7 +52,7 @@
             </div>
         </div>
     </div>
-    <div style="height:100px;font-size:50px;">
+    <div id="examples" style="height:100px;font-size:50px;">
     </div>
     <div class="examples">
         <div class="row">
