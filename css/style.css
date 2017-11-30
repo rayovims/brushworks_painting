@@ -1,0 +1,93 @@
+.transition {
+    background-image: url("../Images/newRoller1.png");
+    background-size: cover;
+    height: 150px;
+    font-size: 50px;
+}
+
+.examples {
+    background-image: url("../Images/homepage.jpg");
+    height: 780px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+#services {
+    font-size: 24px;
+    color: white;
+    margin-left: 80px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#aboutUs {
+    margin-left: 50px;
+    margin-top: 160px;
+    text-align: left;
+    font-size: 40px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#logo {
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+}
+
+#header {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    color: white;
+    padding-top: 30px;
+    margin-top: 0px;
+    z-index: 99;
+}
+
+#main {
+    margin-top: 100px;
+    background-image: url("../Images/homepage.jpg");
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.services {
+    background-image: url("../Images/services.jpg");
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+#footer {
+    background-color: #333;
+    width: 100%;
+    height: 200px;
+    color: white;
+    padding-top: 30px;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
