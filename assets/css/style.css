@@ -147,7 +147,6 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 1300px) {
     #header {
-        position: relative;
         height: 120px;
         z-index: 99;
     }
@@ -158,6 +157,7 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 660px) {
     #header {
+        position: fixed;
         height: 160px;
     }
     #aboutUs {
@@ -168,6 +168,6 @@ input[type=submit]:hover {
         padding-top: 50px;
         height: 670px
     }
-    .services {
+    #services {
     }
 }
