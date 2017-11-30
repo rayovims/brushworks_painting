@@ -55,7 +55,7 @@ p {
 }
 
 #main {
-    margin-top: 100px;
+    padding-top: 100px;
     background-image: url("../Images/homepage.jpg");
     height: 800px;
     background-attachment: fixed;
