@@ -1,6 +1,7 @@
 body {
     position: relative;
 }
+
 .transition1 {
     background-image: url("../Images/roller1.png");
     background-size: cover;
@@ -90,5 +91,15 @@ h1 {
 @media only screen and (max-device-width: 1024px) {
     .parallax {
         background-attachment: scroll;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #header {
+        height: 150px;
+        z-index: 99;
+    }
+    #navbar:last-child {
+        margin-left: 70px;
     }
 }
