@@ -147,17 +147,17 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 1300px) {
     #header {
+        position: relative;
         height: 120px;
         z-index: 99;
     }
-    #navbar:last-child {
-        margin-left: 70px;
+    #aboutUs {
+        
     }
 }
 
 @media only screen and (max-width: 660px) {
     #header {
-        position: fixed;
         height: 160px;
     }
     #aboutUs {
@@ -165,9 +165,13 @@ input[type=submit]:hover {
         margin-left: 10px;
     }
     #main {
-        padding-top: 50px;
-        height: 670px
+        padding-top: 160px;
+        height: 670px;
     }
     #services {
+    }
+    #navbar {
+        background: #333;
+        text-align: center;
     }
 }
