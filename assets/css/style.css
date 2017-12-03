@@ -1,31 +1,73 @@
-body {
-    position: relative;
+#roller1 {
+    position: absolute;
+    left: -2%;
 }
 
-.transitions {
+#transition1 {
     width: 100%;
     height: 150px;
     background: white;
     position: relative;
 }
 
-.progressBar {
-  width: 0%;
-  float: left;
-  height: 100%;
-  z-index:99;
-  max-width: 100%;
-  background-color: skyblue;
-  background-repeat: no-repeat;
+#progressBar1 {
+    width: 0%;
+    float: left;
+    height: 100%;
+    z-index: 99;
+    max-width: 100%;
+    background-color: skyblue;
 }
-.roller{
+
+#roller2 {
     position: absolute;
-    left: 0;
+    left: -2%;
+}
+
+#transition2 {
+    width: 100%;
+    height: 150px;
+    background: white;
+    position: relative;
+}
+
+#progressBar2 {
+    width: 0%;
+    float: left;
+    height: 100%;
+    z-index: 99;
+    max-width: 100%;
+    background-color: skyblue;
+}
+
+#roller3 {
+    position: absolute;
+    left: -2%;
+}
+
+#transition3 {
+    width: 100%;
+    height: 150px;
+    background: white;
+    position: relative;
+}
+
+#progressBar3 {
+    width: 0%;
+    float: left;
+    height: 100%;
+    z-index: 99;
+    max-width: 100%;
+    background-color: skyblue;
+}
+
+body {
+    position: relative;
 }
 
 .examples {
     background-image: url("../Images/homepage.jpg");
-    height: 780px;
+    height: 800px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -164,9 +206,7 @@ input[type=submit]:hover {
         height: 120px;
         z-index: 99;
     }
-    #aboutUs {
-        
-    }
+    #aboutUs {}
 }
 
 @media only screen and (max-width: 660px) {
@@ -181,8 +221,7 @@ input[type=submit]:hover {
         padding-top: 160px;
         height: 670px;
     }
-    #services {
-    }
+    #services {}
     #navbar {
         background: #333;
         text-align: center;
