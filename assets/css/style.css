@@ -6,7 +6,7 @@
 #transition1 {
     width: 100%;
     height: 150px;
-    background: white;
+    background: #b3e0ff;
     position: relative;
 }
 
@@ -16,7 +16,7 @@
     height: 100%;
     z-index: 99;
     max-width: 100%;
-    background-color: skyblue;
+    background-color: black;
 }
 
 #roller2 {
@@ -37,7 +37,7 @@
     height: 100%;
     z-index: 99;
     max-width: 100%;
-    background-color: red;
+    background-color: #D00000;
 }
 
 #roller3 {
@@ -58,16 +58,16 @@
     height: 100%;
     z-index: 99;
     max-width: 100%;
-    background-color: skyblue;
+    background-color: #37e6dc;
 }
 
 body {
     position: relative;
 }
 
-.examples {
+#examples {
     /*background-image: url("../Images/homepage.jpg");*/
-    background: red;
+    background: #D00000;
     height: 800px;
     background-attachment: fixed;
     background-position: center;
@@ -78,7 +78,6 @@ body {
 
 #services {
     font-size: 24px;
-    /*color: white;*/
     font-family: "Times New Roman", Times, serif;
 }
 
@@ -98,7 +97,6 @@ body {
 }
 
 #aboutUs {
-    margin-left: 50px;
     margin-top: 160px;
     text-align: left;
     font-size: 40px;
@@ -115,9 +113,13 @@ p {
     color: white;
 }
 
+li {
+    color: white;
+}
+
 #header {
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
     position: fixed;
     top: 0;
     width: 100%;
@@ -128,9 +130,10 @@ p {
     z-index: 99;
 }
 
-#main {
+#home {
     padding-top: 100px;
-    background-image: url("../Images/homepage.jpg");
+    background: #b3e0ff;
+    /*background-image: url("../Images/homepage.jpg");*/
     height: 900px;
     background-attachment: fixed;
     background-position: center;
@@ -141,12 +144,13 @@ p {
 
 .services {
     /*background-image: url("../Images/services.jpg");*/
-    background: skyblue;
+    background: black;
     height: 800px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
 }
 
 h1 {
@@ -167,6 +171,7 @@ h1 {
         background-attachment: scroll;
     }
 }
+
 
 /*Here is the style for the contact form */
 
@@ -208,7 +213,6 @@ input[type=submit]:hover {
         height: 120px;
         z-index: 99;
     }
-    #aboutUs {}
 }
 
 @media only screen and (max-width: 660px) {
@@ -219,7 +223,7 @@ input[type=submit]:hover {
         margin-top: 0;
         margin-left: 10px;
     }
-    #main {
+    #home {
         padding-top: 160px;
         height: 670px;
     }
