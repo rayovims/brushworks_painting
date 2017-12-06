@@ -40,7 +40,7 @@ $("#submit").on("click", function(e) {
 
     e.preventDefault();
     var buildingType = $("#building option:selected").val();
-    console.log(buildingType);
+    
     if (buildingType == "1") {
         bedMultiplier = 2;
         bathMultiplier = 2;
@@ -77,7 +77,11 @@ $("#submit").on("click", function(e) {
     kitchenTotal = kitchenArr.reduce(function(previousVal, currentVal) {
         return previousVal + currentVal;
     }, 0);
-    kitchenTotal = Math.round((kitchenTotal *= kitchen * bedMultiplier) / 10) * 10 - 5;
+    if (kitchen == 0) {
+        kitchenTotal = 0
+    } else {
+        kitchenTotal = Math.round((kitchenTotal * kitchen * bedMultiplier) / 10) * 10 - 5;
+    }
     $("#kitchenTotal").html("$" + kitchenTotal);
 
     //bathroom Stuff
@@ -99,7 +103,11 @@ $("#submit").on("click", function(e) {
     bathroomTotal = bathroomArr.reduce(function(previousVal, currentVal) {
         return previousVal + currentVal;
     }, 0);
-    bathroomTotal = Math.round((bathroomTotal *= bathroom * bathMultiplier) / 10) * 10 - 5;
+    if (bathroom == 0) {
+        bathroomTotal = 0
+    } else {
+        bathroomTotal = Math.round((bathroomTotal * bathroom * bathMultiplier) / 10) * 10 - 5;
+    }
     $("#bathroomTotal").html("$" + bathroomTotal);
 
     //bedroom Stuff
@@ -121,7 +129,11 @@ $("#submit").on("click", function(e) {
     bedroomTotal = bedroomArr.reduce(function(previousVal, currentVal) {
         return previousVal + currentVal;
     }, 0);
-    bedroomTotal = Math.round((bedroomTotal *= bedroom * bedMultiplier) / 10) * 10 - 5;
+    if (bedroom == 0) {
+        bedroomTotal = 0
+    } else {
+        bedroomTotal = Math.round((bedroomTotal * bedroom * bedMultiplier) / 10) * 10 - 5;
+    }
     $("#bedroomTotal").html("$" + bedroomTotal);
 
 
@@ -144,8 +156,14 @@ $("#submit").on("click", function(e) {
     livingTotal = livingArr.reduce(function(previousVal, currentVal) {
         return previousVal + currentVal;
     }, 0);
-    livingTotal = Math.round((livingTotal *= livingroom * bedMultiplier) / 10) * 10 - 5;
+    if (livingroom == 0) {
+        livingTotal = 0
+    } else {
+        livingTotal = Math.round((livingTotal * livingroom * bedMultiplier) / 10) * 10 - 5;
+    }
     $("#livingTotal").html("$" + livingTotal);
+
+
     total = livingTotal + kitchenTotal + bedroomTotal + bathroomTotal;
     $("#total").html("Total: $" + total)
     //Total
