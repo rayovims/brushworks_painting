@@ -155,6 +155,7 @@ input {
 }
 
 #aboutUs {
+    color: white;
     margin-top: 160px;
     text-align: left;
     font-size: 40px;
@@ -195,7 +196,7 @@ p {
 #home {
     max-width: 100%;
     padding-top: 100px;
-    background-image: url("../Images/homepage.jpg");
+    background-image: url("../Images/back.jpg");
     height: 1050px;
     background-attachment: fixed;
     background-position: center;
