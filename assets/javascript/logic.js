@@ -114,7 +114,7 @@ $("#submit").on("click", function(e) {
     var bedroom = $("#bedroom option:selected").val();
     var bedroomArr = [];
     var bedroomTrim = $('input[name="trim4"]:checked').val();
-    var bedroomWall = $('input[name="wall34"]:checked').val();
+    var bedroomWall = $('input[name="wall4"]:checked').val();
     var bedroomCeiling = $('input[name="ceiling4"]:checked').val();
 
     if (bedroomTrim != null) {
