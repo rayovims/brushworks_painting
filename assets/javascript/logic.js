@@ -58,7 +58,7 @@ $("#submit").on("click", function(e) {
         bathMultiplier = 1;
     }
 
-    // Kitchen stuff
+    // Kitchen Logic
     var kitchen = $("#kitchen option:selected").val();
     var kitchenArr = [];
     var kitchenTrim = $('input[name="trim2"]:checked').val();
@@ -84,7 +84,7 @@ $("#submit").on("click", function(e) {
     }
     $("#kitchenTotal").html("$" + kitchenTotal);
 
-    //bathroom Stuff
+    //bathroom Logic
     var bathroom = $("#bathroom option:selected").val();
     var bathroomArr = [];
     var bathroomTrim = $('input[name="trim3"]:checked').val();
@@ -110,7 +110,7 @@ $("#submit").on("click", function(e) {
     }
     $("#bathroomTotal").html("$" + bathroomTotal);
 
-    //bedroom Stuff
+    //bedroom Logic
     var bedroom = $("#bedroom option:selected").val();
     var bedroomArr = [];
     var bedroomTrim = $('input[name="trim4"]:checked').val();
@@ -137,7 +137,7 @@ $("#submit").on("click", function(e) {
     $("#bedroomTotal").html("$" + bedroomTotal);
 
 
-    //living room stuff
+    //living room Logic
     var livingArr = [];
     var livingroom = $("#livingroom option:selected").val();
     var livingroomTrim = $('input[name="trim1"]:checked').val();
@@ -163,11 +163,8 @@ $("#submit").on("click", function(e) {
     }
     $("#livingTotal").html("$" + livingTotal);
 
-
-    total = livingTotal + kitchenTotal + bedroomTotal + bathroomTotal;
-    $("#total").html("Total: $" + total)
     //Total
-
-
+    total = livingTotal + kitchenTotal + bedroomTotal + bathroomTotal;
+    $("#total").html("Total: $" + total);
 
 });
