@@ -206,6 +206,10 @@ p {
 
 }
 
+.mobile {
+    visibility: hidden;
+}
+
 h1 {
     text-align: center;
     font-size: 50px;
@@ -257,4 +261,12 @@ h1 {
     #navbar {
         text-align: center;
     }
+    .mobile {
+        visibility: visible;
+        color: white;
+        background: black;
+    }
+    .fluid-container {
+    visibility: hidden;
+}
 }
