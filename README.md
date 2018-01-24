@@ -1,3 +1,3 @@
 # brushworks_painting
 
-Deployable Link: https://rayovims.github.io/brushworks_painting/
+Deployed Link: https://rayovims.github.io/brushworks_painting/
