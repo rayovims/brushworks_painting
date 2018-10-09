@@ -221,6 +221,7 @@ h1 {
     height: 200px;
     color: white;
     padding-top: 30px;
+    margin-bottom: -25px;
 }
 
 .container {

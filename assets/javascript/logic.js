@@ -29,6 +29,12 @@ $(function scroll3() {
     });
 });
 
+$('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+        
+
 $("#submit").on("click", function(e) {
     var livingTotal = 0;
     var kitchenTotal = 0;
