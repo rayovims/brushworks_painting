@@ -23,7 +23,7 @@ $(function scroll3() {
         var wintop = $(window).scrollTop(),
             docheight = $("#main").height(),
             winheight = $(window).height();
-        var totalScroll = ((wintop - 1800) / winheight) * 100;
+        var totalScroll = ((wintop - 2000) / winheight) * 100;
         $("#progressBar3").css("width", totalScroll + "%");
         $("#roller3").css("left", totalScroll - 2 + "%");
     });
